@@ -2,30 +2,30 @@
 using namespace std;
 int main()
 {
-    int i,a[10],n,ele,lb=0,ub,mid;
-cout<<"Enter the no of elements you want in array"<<endl;
+    int i,arr[10],n,ele,lb=0,ub,mid;
+cout<<"Enter the no of elements you want in 1D matrix"<<endl;
 cin>>n;
-cout<<"Enter elements in the array "<<endl;
+cout<<"Enter elements in the  1D matrix "<<endl;
 for(i=0;i<n;i++)
 {
-    cin>>a[i];
+    cin>>arr[i];
 }
-cout<<"The array is "<<endl;
+cout<<"The  1D matrix is "<<endl;
 for(i=0;i<n;i++)
 {
-    cout<<a[i]<<" ";
+    cout<<arr[i]<<" ";
 }
-cout<<"Enter the element you want to search in array "<<endl;
+cout<<"Enter the element you want to search in  1D matrix "<<endl;
 cin>>ele;
 ub=n-1;
 while(lb<=ub)
 {
     mid=(lb+ub)/2;
-    if(ele==a[mid])
+    if(ele==arr[mid])
     {
         cout<<"Term Found"<<endl;
     }
-    else if(ele<a[mid])
+    else if(ele<arr[mid])
     {
         ub=mid-1;
     }
